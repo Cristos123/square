@@ -79,9 +79,7 @@ function SignUpPage() {
 
   return (
     <div className=" text-black my-auto">
-      <div className="lg:text-3xl font-bold text-center">
-        Uber and Bolt Re-Imagined
-      </div>
+      <div className="lg:text-3xl font-bold text-center">Square CRM</div>
       <div className="mt-8 lg:text-3xl font-bold text-center">Sign Up</div>
 
       <form
@@ -90,7 +88,7 @@ function SignUpPage() {
         autoComplete="on"
       >
         <TextInputComponent
-          placeholder="Seun Dayo"
+          placeholder="John Doe"
           label="Full name:"
           name="full_name"
           type="text"
@@ -161,7 +159,7 @@ function SignUpPage() {
             <span className="text-blue-500">Login</span>
           </Link>
         </div>
-        <PrimaryButtonComponent
+        {/* <PrimaryButtonComponent
           type={"button"}
           title={"Sell me"}
           onClick={() =>
@@ -169,7 +167,7 @@ function SignUpPage() {
               "We Connect Car Owners and Passengers To And From Anywhere At Half The  Cost.      Help millions of students and working class reach their destination  while making money to reduce your fuel cost. "
             )
           }
-        />
+        /> */}
       </form>
     </div>
   );
