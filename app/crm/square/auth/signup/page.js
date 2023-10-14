@@ -59,7 +59,7 @@ function SignUpPage() {
         if (response.status == 200 || response.status == 201) {
           globalThis.window?.localStorage.setItem("name", name || "");
           toast("You have signed up succesfully");
-          router.push("/square/auth/signin");
+          router.push("/crm/square/auth/signin");
           setLoading(false);
         } else {
           toast("Failed to signup");
