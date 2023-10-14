@@ -90,7 +90,7 @@ function SignInPage() {
         );
         // setUserId(response?.data?.data?.data?.user_id);
         // setVerifyOTP(true);
-        router.push("/square");
+        router.push("/crm/square");
         // setLoading(false);
       } else {
         toast("not-found");
@@ -172,13 +172,13 @@ function SignInPage() {
         />
         <div className="">
           Forgotten your password?{" "}
-          <Link href={"/square/auth/reset-token"}>
+          <Link href={"/crm/square/auth/reset-token"}>
             <span className="text-purple-700">Reset password</span>
           </Link>
         </div>
         <div className="">
-          New to Drop?{" "}
-          <Link href={"/square/auth/signup"}>
+          New to Square CRM?{" "}
+          <Link href={"/crm/square/auth/signup"}>
             <span className="text-purple-700">Sign up now</span>
           </Link>
         </div>

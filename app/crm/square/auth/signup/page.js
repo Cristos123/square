@@ -50,7 +50,8 @@ function SignUpPage() {
       try {
         toast("Please wait...");
         const response = await axios.post(
-          `${process.env.NEXT_PUBLIC_ENDPOINT}auth/register/organizer?${cookies.ref ? `ref=${cookies.ref}` : null
+          `${process.env.NEXT_PUBLIC_ENDPOINT}auth/register/organizer?${
+            cookies.ref ? `ref=${cookies.ref}` : null
           }`,
           json
         );
@@ -69,7 +70,7 @@ function SignUpPage() {
           e.response?.data.message.includes("duplicate")
             ? "Account with this email already exist."
             : e.response?.data.message.toString() ||
-            e.message + ". Check your connection"
+                e.message + ". Check your connection"
         );
         setLoading(false);
       }
@@ -156,7 +157,7 @@ function SignUpPage() {
         />
         <div className="">
           Have an account?{" "}
-          <Link href={"/square/auth/signin"}>
+          <Link href={"/crm/square/auth/signin"}>
             <span className="text-blue-500">Login</span>
           </Link>
         </div>

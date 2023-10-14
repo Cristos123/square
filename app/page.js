@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
   useEffect(() => {
-    router.push("/crm/square");
+    router.push("/crm/square/auth/signup");
   }, []);
 
   return (
