@@ -46,7 +46,7 @@ export default function BindingPage() {
         console.log({ externalUserId, data }, "data?.id", data?.data?.id);
         globalThis.window?.localStorage.setItem(
           "manager_user",
-          data?.data?.id || ""
+          data?.data?.id || data?.id
         );
 
         if (externalUserId) {
