@@ -79,7 +79,9 @@ function SignUpPage() {
 
   return (
     <div className=" text-black my-auto">
-      <div className="lg:text-3xl font-bold text-center">Square CRM</div>
+      <div className="lg:text-3xl font-bold text-center">
+        Square CRM Organization
+      </div>
       <div className="mt-8 lg:text-3xl font-bold text-center">Sign Up</div>
 
       <form
