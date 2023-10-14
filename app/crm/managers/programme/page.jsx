@@ -20,7 +20,7 @@ const Page = () => {
     <div className="   mt-4 md:p-8">
       {/* <AddProgrammeModal open={newDialog} onClose={() => setNewDialog(false)} /> */}
       <ProgrammesHistory />{" "}
-      <button
+      {/* <button
         onClick={() => setNewDialog(true)}
         type="button"
         className="p-2 bg-blue-500 text-white text-center fixed bottom-28 w-12 h-12 rounded-full right-10"
@@ -28,7 +28,7 @@ const Page = () => {
         <div className="my-auto mx-auto">
           <AddIcon />{" "}
         </div>
-      </button>
+      </button> */}
       <ManagerFooter />
     </div>
   );

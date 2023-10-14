@@ -16,6 +16,8 @@ import ManagerFooter from "@/components/managers/ManagerFooter";
 const accessToken = globalThis.window?.localStorage.getItem("accessToken");
 const getUserId =
   globalThis.window?.localStorage.getItem("manager_user") || null;
+
+const baseUrl = process.env.NEXT_PUBLIC_ENDPOINT;
 const Page = () => {
   const [newDialog, setNewDialog] = useState(false);
 
@@ -24,7 +26,7 @@ const Page = () => {
       headers: { authorization: `Bearer ${accessToken}` },
     }).then((res) => res.json());
   const { data, error, isLoading } = useSWR(
-    `${process.env.NEXT_PUBLIC_ENDPOINT}manager/${getUserId}`,
+    `${baseUrl}manager/${getUserId}`,
 
     fetcher
   );
