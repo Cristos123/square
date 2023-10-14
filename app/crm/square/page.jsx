@@ -8,7 +8,7 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import HomeInvestor from "@/components/square/Home";
 import { Container } from "@mui/material";
 
-const page = () => {
+const Page = () => {
   return (
     <div className="container   md:mt-4 mx-auto md:p-8">
       <div className="grid  min-h-screen grid-cols-1 divide-y  my-7">
@@ -18,4 +18,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
