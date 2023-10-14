@@ -215,15 +215,17 @@ export default function TripsHistory() {
   //   fetcher
   // );
 
-  console.log({ data, error });
+  // console.log({ data, error });
   if (isLoading) {
     return <Loading />;
   }
 
-  const combinedData = data?.getall.map((item, index) => ({
-    programme: item,
-    count: data?.counts[index], // Assuming counts has the same length as findBYUser
-  }));
+  const combinedData =
+    data?.getall?.length > 0 &&
+    data?.getall?.map((item, index) => ({
+      programme: item,
+      count: data?.counts[index], // Assuming counts has the same length as findBYUser
+    }));
   return (
     <div className="mb-5  space-y-5 w-full">
       <EditProgrammeModal
