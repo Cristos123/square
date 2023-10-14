@@ -86,7 +86,6 @@ export default function EditParticipantModal(props) {
     }
   }, [participant, props.open]);
   const handleClick = (obj) => {
-    // 👇️ take the parameter passed from the Child component
     setAddressData((emp) => ({ ...emp, ...obj }));
     setPlace(obj[1]?.replaceAll(",", ""));
     setOtherAddress(
