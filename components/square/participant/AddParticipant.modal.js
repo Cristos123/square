@@ -327,9 +327,6 @@ export default function AddParticipantModal(props) {
                   value={participant?.gender}
                   className="p-2 border bg-transparent border-gray-800 rounded-l-md w-1/2 focus:outline-none"
                 >
-                  <option value="" className="p-2">
-                    Gender
-                  </option>
                   {gender.map((option) => (
                     <option key={option.value} value={option.value}>
                       {option.label}

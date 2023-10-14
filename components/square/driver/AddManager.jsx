@@ -190,7 +190,7 @@ export default function AddManagerModal(props) {
             <div className="flex w-full">
               <input
                 className="p-2 border bg-transparent border-gray-800 rounded-l-md w-1/2 focus:outline-none"
-                placeholder="Driver first name"
+                placeholder="Manager first name"
                 type={"text"}
                 value={manager?.manager_first_name}
                 onChange={handleChange}
@@ -200,7 +200,7 @@ export default function AddManagerModal(props) {
               />
               <input
                 className="p-2 bg-transparent border border-l-0 border-gray-800 rounded-r-md w-1/2 focus:outline-none text-xs"
-                placeholder="Driver last name"
+                placeholder="Manager last name"
                 type={"text"}
                 value={manager?.manager_last_name}
                 onChange={handleChange}

@@ -55,7 +55,9 @@ const Page = () => {
             </div>
             <div className="flex justify-between">
               <div>Name:</div>
-              <div>{`${data?.manager_first_name}   ${data?.manager_last_name}`}</div>
+              <div>{`${!isLoading && data?.manager_first_name}   ${
+                !isLoading && data?.manager_last_name
+              }`}</div>
             </div>
             <div className="flex justify-between">
               <div>Email:</div>
